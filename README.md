@@ -1,76 +1,59 @@
-# Service Request Assistant 🚀
+# Service Request Assistant
 
-An AI-powered Salesforce agent that handles customer service requests from start to finish—without human intervention.
-
----
-
-## 💡 Inspiration
-
-In today's fast-paced world, customers expect 24/7 accessibility. Maintaining human support around the clock is costly. Leveraging Salesforce AgentForce and AI, businesses can now deliver human-like support experiences—without the cost.
+This project leverages Salesforce AgentForce to build an intelligent, conversational AI agent that automates service request handling from start to finish.
 
 ---
 
-## 🛠️ What It Does
+## Inspiration
 
-- 📅 Schedule, update, or cancel service requests via conversation
-- 👤 Create new or verify existing customer records
-- 🔧 Assign technicians based on availability & skill
-- 💰 Provide cost estimates
-- 📬 Update users on request status
-- 🔁 Reschedule or switch technicians
-- 📝 Log service notes & collect feedback
-
-All powered through a conversational, intuitive interface!
+In today's fast-paced world, everything has to be accessible 24/7 so that customers can get the information they need whenever they want. This requires companies to dedicate support personnel around the clock, which is a huge cost. By leveraging recent technological developments and the power of AI, they can provide the same human-like service with AI agents like AgentForce via Salesforce.
 
 ---
 
-## 🧱 How We Built It
+## What it does
 
-- **AgentForce Framework** to define Agent Actions
-- **Autolaunched Flows** for backend automation
-- **Decision Logic** to handle new vs existing customers, available vs unavailable technicians
-- **Custom Objects:**
-  - `Customer__c`
-  - `Service_Request__c`
-  - `Field_Technician__c`
-  - `Service_Log__c`
+Our agent helps customers or potential customers schedule, adjust, or even cancel a service request within minutes. It verifies customer existence, creates new customer records when needed, generates service requests, assigns field technicians based on availability and specialty, and provides estimated costs. It also offers updates on the request, allows changes to the technician or appointment time, logs service notes, and even collects customer feedback—all through an intuitive conversational interface.
 
 ---
 
-## 🚧 Challenges We Faced
+## How we built it
 
-- Designing natural yet robust conversational flows
-- Technician assignment logic (availability + skill)
-- Real-time data updates
-- Handling edge cases (duplicates, invalid data, simultaneous requests)
+We used Salesforce’s AgentForce framework to define Agent Actions and connected them to autolaunched flows. Each action triggers a flow that performs database operations like querying for existing customers, creating or updating service requests, assigning technicians, or retrieving historical logs. We also used decision elements and conditional logic in flows to handle various user scenarios, such as whether the customer is new or existing, or whether technicians are available at the desired time. Custom objects like `Customer__c`, `Service_Request__c`, `Field_Technician__c`, and `Service_Log__c` were used to structure the data model.
 
 ---
 
-## 🎉 Accomplishments
+## Challenges we ran into
 
-- Fully automated end-to-end service flow
-- Smart technician assignment engine
-- Personalized user experience with dynamic logic
-- Smooth multi-flow integration into AgentForce
-
----
-
-## 📚 What We Learned
-
-- How to blend **declarative automation + conversational AI**
-- Building scalable modular flows
-- Simulating real-life operations digitally
-- UX best practices in agent design
+- Designing a conversational flow that feels natural yet is robust enough to handle various user inputs  
+- Implementing technician assignment logic based on both availability and skill match  
+- Ensuring real-time updates for technician availability and cost estimations  
+- Handling edge cases such as duplicate customers, invalid inputs, or simultaneous service modifications
 
 ---
 
-## 🔮 What's Next
+## Accomplishments that we're proud of
 
-- 🗓️ Real-time calendar scheduling integration
-- 💸 Live cost estimation with pricing APIs
-- 🌍 Multilingual agent support
-- 📊 Analytics tracking for optimization
+- Successfully automating end-to-end service request handling without human intervention  
+- Creating a dynamic technician assignment logic that balances availability and skill set  
+- Delivering a personalized experience for each customer through intelligent branching logic in AgentForce  
+- Seamlessly integrating multiple flows into a single agent experience
 
 ---
+
+## What we learned
+
+- The power of combining declarative automation with conversational design using Salesforce AgentForce  
+- Best practices for designing scalable and modular autolaunched flows  
+- How to simulate real-world service operations in a digital assistant context  
+- Importance of user experience in designing agent interactions
+
+---
+
+## What's next for Service Request Assistant
+
+- Integrating calendar scheduling functionality for real-time appointment booking  
+- Enhancing cost estimation logic with real-time pricing APIs  
+- Enabling multilingual support for a broader customer base  
+- Adding analytics to track agent usage and optimize flows based on common paths and drop-offs
 
 🛠 Built with ❤️ using Salesforce DX, AgentForce, and Autolaunched Flows
