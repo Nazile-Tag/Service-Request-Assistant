@@ -1,22 +1,76 @@
-HEAD
-# Salesforce DX Project: Next Steps
+# Service Request Assistant 🚀
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+An AI-powered Salesforce agent that handles customer service requests from start to finish—without human intervention.
 
-## How Do You Plan to Deploy Your Changes?
+---
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## 💡 Inspiration
 
-## Configure Your Salesforce DX Project
+In today's fast-paced world, customers expect 24/7 accessibility. Maintaining human support around the clock is costly. Leveraging Salesforce AgentForce and AI, businesses can now deliver human-like support experiences—without the cost.
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+---
 
-## Read All About It
+## 🛠️ What It Does
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+- 📅 Schedule, update, or cancel service requests via conversation
+- 👤 Create new or verify existing customer records
+- 🔧 Assign technicians based on availability & skill
+- 💰 Provide cost estimates
+- 📬 Update users on request status
+- 🔁 Reschedule or switch technicians
+- 📝 Log service notes & collect feedback
 
-# Service-Request-Assistant
-7b0fdc2e9c7f05b4df3a0c129fd097042e088042
+All powered through a conversational, intuitive interface!
+
+---
+
+## 🧱 How We Built It
+
+- **AgentForce Framework** to define Agent Actions
+- **Autolaunched Flows** for backend automation
+- **Decision Logic** to handle new vs existing customers, available vs unavailable technicians
+- **Custom Objects:**
+  - `Customer__c`
+  - `Service_Request__c`
+  - `Field_Technician__c`
+  - `Service_Log__c`
+
+---
+
+## 🚧 Challenges We Faced
+
+- Designing natural yet robust conversational flows
+- Technician assignment logic (availability + skill)
+- Real-time data updates
+- Handling edge cases (duplicates, invalid data, simultaneous requests)
+
+---
+
+## 🎉 Accomplishments
+
+- Fully automated end-to-end service flow
+- Smart technician assignment engine
+- Personalized user experience with dynamic logic
+- Smooth multi-flow integration into AgentForce
+
+---
+
+## 📚 What We Learned
+
+- How to blend **declarative automation + conversational AI**
+- Building scalable modular flows
+- Simulating real-life operations digitally
+- UX best practices in agent design
+
+---
+
+## 🔮 What's Next
+
+- 🗓️ Real-time calendar scheduling integration
+- 💸 Live cost estimation with pricing APIs
+- 🌍 Multilingual agent support
+- 📊 Analytics tracking for optimization
+
+---
+
+🛠 Built with ❤️ using Salesforce DX, AgentForce, and Autolaunched Flows
